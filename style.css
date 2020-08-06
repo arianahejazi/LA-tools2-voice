@@ -1,0 +1,144 @@
+
+html{
+    scroll-behavior: smooth!important;
+}
+
+#content {
+    background: #f6f6f6!important;
+} 
+
+#content .gap-text{
+    font-size: 18px!important;
+    line-height: 40px!important;
+}
+
+/* input */
+.dropdown-toggle{
+    border-radius: 30px;
+    border: 1px solid #ddd !important;
+}
+
+.dropdown-toggle:hover {
+    background: #e0f2f1!important;
+    border-color: #d5d5d5!important;
+}
+
+.dropdown-toggle:active,.dropdown-toggle:focus{
+    border: none!important;
+    outline: none!important;
+}
+
+.dropdown-toggle:focus{
+    border: 1.5px solid #1DE9B6!important;
+}
+
+.dropdown-menu{
+    border: 1px solid #ddd!important;
+    border-radius: 30px!important;
+    height: 220;
+    overflow: scroll;
+    background: #ffffff!important;
+}
+
+.dropdown-menu li{
+    text-align: center!important;
+    border-bottom: 1px solid #ddd!important;
+}
+
+.dropdown-menu li:last-child{
+    border-bottom: none!important;
+}
+
+.btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {
+    background-color: #ffffff !important;
+    border: 1.5px solid #1DE9B6 !important;
+}
+
+/* custom scrollbar */
+
+
+.dropdown-menu::-webkit-scrollbar , .dropdown-menu::scrollbar {
+    width: 20px!important;
+}
+
+.dropdown-menu::-webkit-scrollbar-track , .dropdown-menu::scrollbar-track {
+    background-color: transparent!important;
+    margin: 14px!important;
+}
+
+.dropdown-menu::-webkit-scrollbar-thumb , .dropdown-menu::scrollbar-thumb {
+    background-color: #c2c2c2!important;
+    border-radius: 20px!important;
+    border: 6px solid transparent!important;
+    background-clip: content-box!important;
+}
+
+.dropdown-menu::-webkit-scrollbar-thumb:hover , .dropdown-menu::scrollbar-thumb:hover {
+    background-color: #c2c2c2!important;
+}
+
+#checkSolutionBtn{
+    background: #b0e4b4!important;
+    color: #3b533d!important;
+    padding: 21px 23px!important;
+    width: 80px!important;
+    height: 80px!important;
+    box-shadow: 2px 2px 4px 1px #959595!important;
+    font-size: 30px!important;
+    border: 2px solid #3b533d!important;
+    margin: 5px 10px!important;
+}
+#checkSolutionBtn:hover{
+    background: #b0e4b4!important;
+    color: #3b533d!important;
+    padding: 21px 23px!important;
+    width: 80px!important;
+    height: 80px!important;
+    box-shadow: 2px 2px 4px 1px #959595!important;
+    font-size: 30px!important;
+    border: 2px solid #3b533d!important;
+    margin: 5px 10px!important;
+    opacity: 0.5!important;
+}
+
+.btn-danger,.btn-danger:hover,.btn-danger.active:focus,.btn-danger.active:active {
+    color: #fff!important;
+    background-color: #ffff!important;
+    border: 2px solid #ffacaa!important;
+}
+
+/* meseage */
+#AppClientTaskPanel{
+    border-radius: 8px !important;
+    background-color: #ffffff!important;
+    border-top: 9px solid rgb(255, 158, 0)!important;
+    border-left: 1px solid #dddd!important;
+    border-right: 1px solid #dddd!important;
+    border-bottom: 1px solid #dddd!important;
+    padding: 25px!important;
+    -webkit-box-shadow:none !important;
+            box-shadow:none !important;
+  }
+  #AppClientTaskPanel p{
+    margin: 0 0 15px !important;
+    color: #2f2f2f!important;
+  }
+  #AppClientTaskPanel div{
+    color: #4c4c4c!important;
+    text-align: justify!important;
+  }
+  #AppClientTaskPanel div button{
+    font-size: 120%!important;
+    width: 100%!important;
+    margin: 25px 0 0!important;
+    padding: 5px!important;
+    border: none!important;
+    color: #fff!important;
+    background: rgb(15, 108, 227);
+    border-radius: 20px!important;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+  }
+  #AppClientTaskPanel div button:hover{
+    opacity: 0.5!important;       
+  }
