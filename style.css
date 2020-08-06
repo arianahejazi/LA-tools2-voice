@@ -1,144 +1,187 @@
+:root {
+    --tifany:#1DE9B6;
+    --light-tifany: #B2DFDB;
+    --orange-10: #ff7320;
+    --light-orange-20:#ffac7b;
+    --light-orange-10:#ffcd7b;
+    --light-orange:#ffaa20;
+    --orange:#ff9e00;
+    --light-blue-10:#7fb1f1;
+    --light-blue:#2e80e9;
+    --blue : #0f6ce3;
+    --light-gray-10: #f9f9f9;
+    --light-gray: #d2d2d2;
+    --gray:#959595;
+    --white : #ffffff;
+    --light-black :#353535;
+    --black: #000000;
+    --light-green:#b0e4b4;
+    --dark-green:#3b533d;
+    --light-red:#ffacaa;
+    --red:#fd7a91;
+  }
 
-html{
-    scroll-behavior: smooth!important;
-}
+  .card{
+    font-family: monospace!important;
+    color: var(--light-black)!important;
+    border: 1px solid var(--light-gray)!important;
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+    border-radius: 20px!important;;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    vertical-align: middle!important;
+    font-size: 15px!important;
+  }
+  
+  .card img {
+    border: 5px solid var(--white)!important;
+    border-radius: 9px!important;
+  }
+  
+  .card .pin {
+    width: 17px !important;
+    height: 17px !important;
+    top: -7px !important;
+    background: var(--light-blue)!important;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+    color: var(--white)!important;
+    padding: 2px 6px!important;
+  }
 
-#content {
-    background: #f6f6f6!important;
-} 
-
-#content .gap-text{
-    font-size: 18px!important;
-    line-height: 40px!important;
-}
-
-/* input */
-.dropdown-toggle{
-    border-radius: 30px;
-    border: 1px solid #ddd !important;
-}
-
-.dropdown-toggle:hover {
-    background: #e0f2f1!important;
-    border-color: #d5d5d5!important;
-}
-
-.dropdown-toggle:active,.dropdown-toggle:focus{
-    border: none!important;
-    outline: none!important;
-}
-
-.dropdown-toggle:focus{
-    border: 1.5px solid #1DE9B6!important;
-}
-
-.dropdown-menu{
-    border: 1px solid #ddd!important;
-    border-radius: 30px!important;
-    height: 220;
-    overflow: scroll;
-    background: #ffffff!important;
-}
-
-.dropdown-menu li{
+.cluster .clusterHint {
+    background: var(--white)!important;
+    padding: 1.5%!important;
+    border-radius: 50px!important;
+    font-weight: bold!important;
+    font-family: monospace!important;
+    display: inline-block !important;
+    width: 30%!important;
     text-align: center!important;
-    border-bottom: 1px solid #ddd!important;
+    border-radius: 0 30px 30px 0 !important;
+    left: 0 !important;
+    padding: 15px !important;
+    -webkit-box-shadow: 0px 0px 5px 0px var(--light-black) !important;
+            box-shadow: 0px 0px 5px 0px var(--light-black) !important;
 }
 
-.dropdown-menu li:last-child{
-    border-bottom: none!important;
+
+.card.wrong{
+    border: 2px solid var(--red)!important;
+    background: var(--light-red)!important;
 }
 
-.btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {
-    background-color: #ffffff !important;
-    border: 1.5px solid #1DE9B6 !important;
+.card.correct {
+    border:2px solid var(--light-green)!important;
 }
 
-/* custom scrollbar */
 
-
-.dropdown-menu::-webkit-scrollbar , .dropdown-menu::scrollbar {
-    width: 20px!important;
+.newcard  .card .pin{
+    background: var(--light-orange-10);
 }
 
-.dropdown-menu::-webkit-scrollbar-track , .dropdown-menu::scrollbar-track {
-    background-color: transparent!important;
-    margin: 14px!important;
+.card .pin.orange {
+    background: var(--light-orange)!important;
 }
 
-.dropdown-menu::-webkit-scrollbar-thumb , .dropdown-menu::scrollbar-thumb {
-    background-color: #c2c2c2!important;
-    border-radius: 20px!important;
-    border: 6px solid transparent!important;
-    background-clip: content-box!important;
+.resizeText{
+    font-size: 1.2em!important;
+    color: var(--light-black)!important;
+    text-align: center!important;
+    padding: 0 10px!important;
+    display: block!important;
 }
 
-.dropdown-menu::-webkit-scrollbar-thumb:hover , .dropdown-menu::scrollbar-thumb:hover {
-    background-color: #c2c2c2!important;
+.card.wrong{
+    border: 2px solid var(--red)!important;
+    background: var(--light-red)!important;
 }
 
+/* hide modal */
+.card .playMediaBtn {
+    background: var(--light-gray-10)!important;
+}
+
+.modal-backdrop.in {
+    display: none!important;
+}
+
+.modal-open .modal {
+    display: none !important;
+}
+
+/* check solve button */
 #checkSolutionBtn{
-    background: #b0e4b4!important;
-    color: #3b533d!important;
+    background: var(--light-green)!important;
+    color: var(--dark-green)!important;
     padding: 21px 23px!important;
     width: 80px!important;
     height: 80px!important;
-    box-shadow: 2px 2px 4px 1px #959595!important;
+    -webkit-box-shadow: none!important;
+            box-shadow: none!important;
     font-size: 30px!important;
-    border: 2px solid #3b533d!important;
+    border: 2px solid var(--dark-green)!important;
     margin: 5px 10px!important;
-}
-#checkSolutionBtn:hover{
-    background: #b0e4b4!important;
-    color: #3b533d!important;
-    padding: 21px 23px!important;
-    width: 80px!important;
-    height: 80px!important;
-    box-shadow: 2px 2px 4px 1px #959595!important;
-    font-size: 30px!important;
-    border: 2px solid #3b533d!important;
-    margin: 5px 10px!important;
-    opacity: 0.5!important;
 }
 
-.btn-danger,.btn-danger:hover,.btn-danger.active:focus,.btn-danger.active:active {
-    color: #fff!important;
-    background-color: #ffff!important;
-    border: 2px solid #ffacaa!important;
+#checkSolutionBtn:hover{
+    opacity: 0.7!important;
 }
 
 /* meseage */
 #AppClientTaskPanel{
     border-radius: 8px !important;
-    background-color: #ffffff!important;
-    border-top: 9px solid rgb(255, 158, 0)!important;
-    border-left: 1px solid #dddd!important;
-    border-right: 1px solid #dddd!important;
-    border-bottom: 1px solid #dddd!important;
+    background-color: var(--white)!important;
+    border-top: 9px solid var(--orange)!important;
+    border-left: 1px solid var(--light-gray)!important;
+    border-right: 1px solid var(--light-gray)!important;
+    border-bottom: 1px solid var(--light-gray)!important;
     padding: 25px!important;
     -webkit-box-shadow:none !important;
             box-shadow:none !important;
-  }
-  #AppClientTaskPanel p{
+}
+
+#AppClientTaskPanel p{
     margin: 0 0 15px !important;
-    color: #2f2f2f!important;
-  }
-  #AppClientTaskPanel div{
-    color: #4c4c4c!important;
+    color: var(--light-black)!important;
+}
+
+#AppClientTaskPanel div{
+    color: var(--light-black)!important;
     text-align: justify!important;
-  }
-  #AppClientTaskPanel div button{
+}
+
+#AppClientTaskPanel div button{
     font-size: 120%!important;
     width: 100%!important;
     margin: 25px 0 0!important;
     padding: 5px!important;
     border: none!important;
-    color: #fff!important;
-    background: rgb(15, 108, 227);
+    color: var(--white)!important;
+    background: var(--blue);
     border-radius: 20px!important;
     -webkit-box-shadow: none !important;
             box-shadow: none !important;
-  }
-  #AppClientTaskPanel div button:hover{
+}
+
+#AppClientTaskPanel div button:hover{
     opacity: 0.5!important;       
-  }
+}
+
+.example {
+    display: -ms-grid;
+    display: grid;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    background: -o-linear-gradient(top, var(--white),var(--black));
+    background: -webkit-gradient(linear, left top, left bottom, from(var(--white)),to(var(--black)));
+    background: linear-gradient(to bottom, var(--white),var(--black));
+}
