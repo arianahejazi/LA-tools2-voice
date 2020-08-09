@@ -21,6 +21,10 @@
     --red:#fd7a91;
   }
 
+    body{
+      font-family: sans-serif !important;
+    }
+
   .card{
     font-family: monospace!important;
     color: var(--light-black)!important;
